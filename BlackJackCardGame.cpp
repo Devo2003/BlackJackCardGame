@@ -54,12 +54,12 @@ int main()
     // PLAYER AI CODE to tell when to deal, or stop dealing a card
     if (sumHands(playerHand) < 16) 
     {
-      cout << "Deal a card" << endl;
+      cout << "Hit! Deal a card" << endl;
       Deal(deck, playerHand);
 
     } else if (sumHands(playerHand) > 16) 
     {
-      cout << "Stopped Dealing cards" << endl;
+      cout << "Stay! Stopped Dealing cards" << endl;
 
       cout << playerSum << endl;
     }
@@ -67,11 +67,11 @@ int main()
     // DEALER AI CODE to tell when to deal, or stop dealing a card
     if (sumHands(dealerHand) < 16) 
     {
-      cout << "Deal a card" << endl;
+      cout << "Hit! Deal a card" << endl;
       Deal(deck, dealerHand);
     } else if (sumHands(dealerHand) > 16) 
     {
-      cout << "Stopped Dealing cards" << endl;
+      cout << "Stay! Stopped Dealing cards" << endl;
       cout << dealerSum << endl;
     }
 
